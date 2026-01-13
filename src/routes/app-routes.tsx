@@ -1,5 +1,4 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
-import { DashboardPage } from '@/modules/dashboard';
 import { FinancePage } from '@/modules/finance';
 import { CalendarPage } from '@/modules/big-calendar';
 import { EmailPage } from '@/modules/email';
@@ -27,6 +26,7 @@ import { SidebarProvider } from '@/components/ui-kit/sidebar';
 import { Toaster } from '@/components/ui-kit/toaster';
 import { useLanguageContext } from '@/i18n/language-context';
 import { LoadingOverlay } from '@/components/core';
+import Layout from '@/pages/layout';
 
 export const AppRoutes = () => {
   const { isLoading } = useLanguageContext();
@@ -48,7 +48,7 @@ export const AppRoutes = () => {
                   </Guard>
                 }
               >
-                <Route path="/dashboard" element={<DashboardPage />} />
+                <Route path="/dashboard" element={<Layout />} />
                 <Route
                   path="/finance"
                   element={
