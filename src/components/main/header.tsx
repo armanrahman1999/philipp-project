@@ -11,7 +11,7 @@ const Header: React.FC = () => {
       <div className="flex items-center gap-4">
         <a
           href="/"
-          className="text-sm font-medium text-primary-500 hover:text-primary-700 hover:underline"
+          className="text-sm font-medium text-blue-500 hover:text-blue-700 hover:underline"
         >
           Zurück zur Startseite
         </a>

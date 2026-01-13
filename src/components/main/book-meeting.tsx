@@ -10,7 +10,7 @@ const BookMeeting: React.FC = () => {
         href="https://calendly.com/philipp-matter/30min-1"
         target="_blank"
         rel="noopener noreferrer"
-        className="mx-auto inline-block rounded-lg bg-teal-600 px-6 py-3.5 font-semibold text-white shadow-teal-button transition-colors hover:bg-teal-700 md:px-7 md:py-4"
+        className="mx-auto inline-block rounded-lg bg-teal-800 px-6 py-3.5 font-semibold text-white shadow-teal-button transition-colors hover:bg-teal-700 md:px-7 md:py-4"
       >
         Planen Sie einen 30-minütigen Termin
       </a>

@@ -48,7 +48,7 @@ const MainCard: React.FC = () => {
         <div className="mb-6 text-center">
           <a
             href={whitepaperInfo.downloadUrl}
-            className="inline-flex items-center rounded-lg bg-primary-700 px-7 py-4 text-center font-semibold text-white shadow-button transition-colors hover:bg-primary-800 md:px-8 md:py-5"
+            className="inline-flex items-center rounded-lg bg-blue-700 px-7 py-4 text-center font-semibold text-white shadow-button transition-colors hover:bg-primary-800 md:px-8 md:py-5"
             download
             target="_blank"
             rel="noopener noreferrer"
@@ -78,7 +78,7 @@ const MainCard: React.FC = () => {
 
         <p className="text-center text-sm text-gray-500">
           Durch das Herunterladen stimmen Sie unseren{' '}
-          <a href="#" className="font-medium text-primary-500 underline hover:text-primary-700">
+          <a href="#" className="font-medium text-blue-500 underline hover:text-blue-700">
             Nutzungsbedingungen zu
           </a>
           .

@@ -48,7 +48,7 @@ export const AppRoutes = () => {
                   </Guard>
                 }
               >
-                <Route path="/dashboard" element={<Layout />} />
+                <Route path="/" element={<Layout />} />
                 <Route
                   path="/finance"
                   element={
