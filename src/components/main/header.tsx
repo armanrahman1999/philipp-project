@@ -1,4 +1,4 @@
-import React from 'react';
+import { LanguageSelector } from '@/components/core';
 
 const Header: React.FC = () => {
   return (
@@ -10,12 +10,15 @@ const Header: React.FC = () => {
           className="h-7 w-auto md:h-7"
         />
       </div>
-      <a
-        href="/"
-        className="text-sm font-medium text-primary-500 hover:text-primary-700 hover:underline"
-      >
-        Zurück zur Startseite
-      </a>
+      <div className="flex items-center gap-4">
+        <a
+          href="/"
+          className="text-sm font-medium text-primary-500 hover:text-primary-700 hover:underline"
+        >
+          Zurück zur Startseite
+        </a>
+        <LanguageSelector />
+      </div>
     </header>
   );
 };
