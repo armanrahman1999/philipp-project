@@ -9,11 +9,12 @@ const whitepaperInfo: WhitepaperInfo = {
 
 const MainCard: React.FC = () => {
   return (
-    <main className="mx-auto max-w-4xl px-5 py-6 md:px-5 md:py-8">
-      <div className="rounded-xl bg-white p-7 shadow-card md:p-8">
+    <main className="mx-auto max-w-4xl px-5 py-6 md:px-5 md:py-8 ">
+      <div className="bg-white p-7 md:p-8 rounded-2xl shadow-[0_2px_10px_rgba(0,0,0,0.05)] text-center flex-1 min-h-[45vh] flex flex-col justify-center">
+        {' '}
         {/* Success Badge */}
         <div className="mb-4 flex justify-center">
-          <div className="inline-flex items-center gap-1.5 rounded-full bg-success-50 px-3 py-1.5 text-sm font-semibold text-success-800">
+          <div className="inline-flex items-center gap-1.5 rounded-full bg-green-50 px-3 py-1.5 text-sm font-semibold text-success-800">
             <svg
               width="16"
               height="16"
@@ -30,25 +31,22 @@ const MainCard: React.FC = () => {
                 strokeLinejoin="round"
               />
             </svg>
-            Eingabe erfolgreich
+            <p className="text-green-800"> Eingabe erfolgreich</p>
           </div>
         </div>
-
         <h1 className="mb-4 text-center text-2xl font-bold text-gray-900 md:text-3xl">
           Du bist startklar!
         </h1>
-
         <p className="mb-6 text-center text-base text-gray-600 md:text-lg">
           Vielen Dank für Ihr Interesse. Ihr Exemplar von{' '}
           <strong className="font-semibold">{whitepaperInfo.title}</strong> steht zum sofortigen
           Download bereit. Wir haben Ihnen außerdem eine Kopie per E-Mail zugestellt.
         </p>
-
         {/* PDF Download Link */}
         <div className="mb-6 text-center">
           <a
             href={whitepaperInfo.downloadUrl}
-            className="inline-flex items-center rounded-lg bg-blue-700 px-7 py-4 text-center font-semibold text-white shadow-button transition-colors hover:bg-primary-800 md:px-8 md:py-5"
+            className="inline-flex items-center rounded-lg bg-blue-700 px-7 py-4 text-center font-semibold text-white shadow-button transition-colors hover:bg-blue-800 md:px-8 md:py-5"
             download
             target="_blank"
             rel="noopener noreferrer"
@@ -75,7 +73,6 @@ const MainCard: React.FC = () => {
             </div>
           </a>
         </div>
-
         <p className="text-center text-sm text-gray-500">
           Durch das Herunterladen stimmen Sie unseren{' '}
           <a href="#" className="font-medium text-blue-500 underline hover:text-blue-700">
