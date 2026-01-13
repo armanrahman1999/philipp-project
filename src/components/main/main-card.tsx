@@ -4,8 +4,7 @@ import React from 'react';
 const whitepaperInfo: WhitepaperInfo = {
   title: 'Die Zukunft der KI in Unternehmen',
   fileSize: '3.2 MB',
-  downloadUrl:
-    'https://drive.google.com/drive/folders/19G499_aXehhENvg_zH1BGdQnN2NoweE-?usp=sharing',
+  downloadUrl: '/Selise Whitepaper.pdf',
 };
 
 const MainCard: React.FC = () => {
